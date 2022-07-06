@@ -66,6 +66,22 @@ export const App = () => {
       date: "2021/10/10"
     };
   });
+  let array = [1, 12, 123, 1234, 12345];
+
+  let result = array.filter((value) => {
+    //100以上の値を全て抽出する
+    return value >= 100;
+  });
+
+  let arr = [1, 2, 3, 4, 5, 6];
+
+  let find = arr.find((n) => {
+    return n > 3;
+  });
+
+  console.log(find);
+
+  console.log(result);
   return (
     <div className="App">
       {console.log(getCount("abrakatabura"))}
@@ -75,12 +91,3 @@ export const App = () => {
     </div>
   );
 };
-
-let array = [1, 12, 123, 1234, 12345];
-
-let result = array.filter((value) => {
-  //100以上の値を全て抽出する
-  return value >= 100;
-});
-
-console.log(result);
