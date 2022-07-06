@@ -6,12 +6,12 @@ export const App = () => {
     vowelsCount = (str.match(/[aeiou]/gi) || []).length;
     return vowelsCount;
   };
-  getCount("abrakatabura");
+  // getCount("abrakatabura");
 
-  // let number = 7;
   const even_or_odd = (number: number) => {
     return number % 2 ? "Odd" : "Even";
   };
+  // even_or_odd(7);
 
   interface Obj {
     a: number;
@@ -35,8 +35,8 @@ export const App = () => {
     (researchResult) => obj[researchResult] * 2
   );
 
-  console.log(setReserach);
-  console.log(setReserachList);
+  // console.log(setReserach);
+  // console.log(setReserachList);
   // a:researchResult.a,
   // b:researchResult.b,
   // c:researchResult.c
@@ -72,6 +72,7 @@ export const App = () => {
     //100以上の値を全て抽出する
     return value >= 100;
   });
+  // console.log(result);
 
   let arr = [1, 2, 3, 4, 5, 6];
 
@@ -79,13 +80,12 @@ export const App = () => {
     return n > 3;
   });
 
-  console.log(find);
+  // console.log(find);
 
-  console.log(result);
   return (
     <div className="App">
-      {console.log(getCount("abrakatabura"))}
-      {console.log(even_or_odd(7))}
+      {/* {console.log(getCount("abrakatabura"))} */}
+      {/* {console.log(even_or_odd(7))} */}
       <h1>Hello CodeSandbox</h1>
       <h2>Start editing to see some magic happen!</h2>
     </div>
